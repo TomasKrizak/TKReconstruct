@@ -5,7 +5,7 @@ ClassImp(TKtrhit);
 
 // dimensions in mm
 // origin in the center of detector
-static double foil_spacex = 58.0; // probably wrong
+static double foil_spacex = 62.0; // falaise value. (originally set to 58)
 const double tc_radius = 22.0;
 const double tc_sizez = 2770.0;
 
