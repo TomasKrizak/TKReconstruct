@@ -321,7 +321,7 @@ int TKOMhit::get_SWCR(char _SWCR_n)
 		case 'R':	return SWCR[3];
 			  	break;
 		default:	std::cout << "ERROR in int TKOMhit::get_SWCR(char): " << _SWCR_n << " is not a valid argument value! " << std::endl;  
-				return NULL;
+				return -1;
 	}
 }
 
@@ -342,7 +342,7 @@ double TKOMhit::get_xyz(char _xyz_n)
 		case 'Z':	return xyz[2];
 			  	break;
 		default:	std::cout << "ERROR in double TKOMhit::get_xyz(char): " << _xyz_n << " is not a valid argument value! " << std::endl;  
-				return NULL;
+				return -1;
 	}
 }
 

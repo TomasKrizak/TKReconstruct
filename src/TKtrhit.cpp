@@ -208,7 +208,7 @@ int TKtrhit::get_SRL(char _SRL_n)
 		case 'L':	return SRL[2];
 			  	break;
 		default:	std::cout << "ERROR in int TKtrhit::get_SRL(char _SRL_n): " << _SRL_n << " is not a valid argument value! " << std::endl;  
-				return NULL;
+				return -1;
 	}
 }
 
@@ -225,7 +225,7 @@ double TKtrhit::get_xy(char _xy_n)
 		case 'Y':	return xy[1];
 			  	break;
 		default:	std::cout << "ERROR in double TKtrhit::get_xy(char): " << _xy_n << " is not a valid argument value! " << std::endl;  
-				return NULL;
+				return -1;
 	}
 }
 
@@ -252,7 +252,7 @@ int64_t TKtrhit::get_tsp (char _tsp_n) // returns timestamp
 		case 'T':	return tsp[6];
 			  	break;
 		default:	std::cout << "ERROR in int64_t TKtrhit::get_tsp (char): " << _tsp_n << " is not a valid argument value! " << std::endl;  
-				return NULL;
+				return -1;
 	}
 }
 

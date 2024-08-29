@@ -1112,7 +1112,7 @@ void TKEvent::reconstruct(bool save_sinograms)
 		vector<TKtrhit*> hits = filter_side(tr_hits, side); 
 		hits = filter_usable( hits );
 		hits = filter_distant( hits );
-		int no_hits_before = 1e10;
+		int no_hits_before = 2034;
 		while( hits.size() > 2 && no_hits_before > hits.size() )
 		{
 			//if(debug_mode) cout << "iteration start: " << endl;
@@ -1174,7 +1174,7 @@ void TKEvent::reconstruct(bool save_sinograms)
 		}
 	}
 	this->build_trajectories();
-	this->extrapolate_trajectories();
+	//this->extrapolate_trajectories();
 }
 
 void TKEvent::reconstruct_simple(bool save_sinograms)

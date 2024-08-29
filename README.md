@@ -7,8 +7,7 @@ To obtain the final PTD bank you then need to apply Charged Particle Tracking mo
 
   load the environement:
   
-    source /sps/nemo/sw/snswmgr/snswmgr.conf
-    snswmgr_load_setup falaise@5.1.1
+    source /sps/nemo/scratch/chauveau/software/falaise/emchauve-pcd2cd/this_falaise.sh
     
   install:
   
